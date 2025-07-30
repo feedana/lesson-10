@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat Formu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left">
+            <h1>Qeydiyyatdan keçin</h1>
+            <p>İstədiyiniz kursu seçin və şəxsi məlumatlarınızı daxil edin. Ən qısa zamanda sizinlə əlaqə saxlayacağıq.</p>
+            <img src="./images/register-img.png" alt="Form illustration">
+        </div>
+
+        <!-- Right Section (Form) -->
+        <div class="right">
+            <form>
+                <select name="course" required>
+                    <option selected disabled>Kursu seçin</option>
+                    <option value="frontend">Front-end</option>
+                    <option value="backend">Back-end</option>
+                    <option value="design">UI/UX Dizayn</option>
+                </select>
+
+                <input type="text" placeholder="Ad Soyad" required>
+
+                <input type="email" placeholder="example@gmail.com" required>
+
+                <input type="tel" placeholder="055 555 55 55" required>
+
+                <input type="time" value="11:00" required>
+
+                <button type="submit">Qeydiyyat</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
