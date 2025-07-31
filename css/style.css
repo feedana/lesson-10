@@ -55,7 +55,27 @@ form {
     flex-direction: column;
 }
 
+form label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
 form select,
 form input {
     padding: 12px;
-    margin-bottom: 15
+    margin-bottom: 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border
+}
+.submit-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
