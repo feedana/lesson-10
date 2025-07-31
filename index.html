@@ -4,36 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qeydiyyat Formu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
+
         <!-- Left Section -->
         <div class="left">
             <h1>Qeydiyyatdan keçin</h1>
-            <p>İstədiyiniz kursu seçin və şəxsi məlumatlarınızı daxil edin. Ən qısa zamanda sizinlə əlaqə saxlayacağıq.</p>
-            <img src="./images/register-img.png" alt="Form illustration">
+            <p>İstədiyiniz kursu seçin və şəxsi məlumatlarınızı daxil edin. 
+               Ən qısa zamanda sizinlə əlaqə saxlayacağıq.</p>
+            <img src="./images/register-img.png" alt="images">
         </div>
 
         <!-- Right Section (Form) -->
         <div class="right">
             <form>
-                <select name="course" required>
+                <label for="course">Kurs seçin</label>
+                <select id="course" name="course" required>
                     <option selected disabled>Kursu seçin</option>
                     <option value="frontend">Front-end</option>
                     <option value="backend">Back-end</option>
-                    <option value="design">UI/UX Dizayn</option>
+                    <option value="fullstack">Full-stack</option>
+                    <option value="mobile">Mobil Tətbiq İnkişafı</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="ui-ux">UI/UX Dizayn</option>
+                    <option value="cybersecurity">Kiber Təhlükəsizlik</option>
+                    <option value="devops">DevOps</option>
+                    <option value="cloud-computing">Cloud Computing</option>
                 </select>
 
-                <input type="text" placeholder="Ad Soyad" required>
+                <label for="fullname">Adınız və soyadınız</label>
+                <input id="fullname" type="text" placeholder="Ad Soyad" required>
 
-                <input type="email" placeholder="example@gmail.com" required>
+                <label for="email">Emailiniz</label>
+                <input id="email" type="email" placeholder="example@gmail.com" required>
 
-                <input type="tel" placeholder="055 555 55 55" required>
+                <label for="phone">Əlaqə nömrəniz</label>
+                <input id="phone" type="tel" placeholder="055 555 55 55" required>
 
-                <input type="time" value="11:00" required>
+                <label for="time">Zəng üçün uyğun vaxt</label>
+                <input id="time" type="time" value="11:00" required>
 
-                <button type="submit">Qeydiyyat</button>
+                <button type="submit" class="submit-btn">Qeydiyyat →</button>
             </form>
         </div>
     </div>
